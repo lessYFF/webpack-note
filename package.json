@@ -1,0 +1,19 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "the notes of webpack",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "npm test"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "Bruce yff",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "webpack": "^3.10.0"
+  }
+}
