@@ -13,7 +13,11 @@
   "author": "Bruce yff",
   "license": "ISC",
   "dependencies": {
+    "clean-webpack-plugin": "^0.1.18",
     "lodash": "^4.17.4",
     "webpack": "^3.10.0"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^2.30.1"
   }
 }
