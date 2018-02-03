@@ -4,7 +4,10 @@
   "description": "the notes of webpack",
   "main": "index.js",
   "scripts": {
+    "watch": "webpack --progress --watch",
+    "start": "webpack-dev-server --open",
     "build": "webpack",
+    "server": "node server",
     "test": "npm test"
   },
   "keywords": [
@@ -14,8 +17,13 @@
   "license": "ISC",
   "dependencies": {
     "clean-webpack-plugin": "^0.1.18",
+    "css-loader": "^0.28.9",
+    "express": "^4.16.2",
     "lodash": "^4.17.4",
-    "webpack": "^3.10.0"
+    "style-loader": "^0.20.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-middleware": "^2.0.4",
+    "webpack-dev-server": "^2.11.1"
   },
   "devDependencies": {
     "html-webpack-plugin": "^2.30.1"
