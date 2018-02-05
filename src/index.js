@@ -1,10 +1,12 @@
 import './style.css';
 import _ from 'lodash';
 import printMsg from './print.js';
+import { square } from './math.js';
 
 function createComponent() {
 	const element = document.createElement('div');
-	element.innerHTML = _.join(['Hello', 'webpack', 'by yff'], '');
+	element.innerHTML = _.join(['Hello webpack', 
+				    `5 square is equal to${square(5)}` ]);
 	
 	const btn = document.createElement('button');
 	btn.innerHTML = 'Click me and check the console!';
