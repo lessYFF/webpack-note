@@ -10,10 +10,13 @@ module.exports = {
 	output: {
 	  publicPath: '/',
      	  filename: '[name].bundle.js',
-     	  path: path.resolve(__dirname, 'dist'),
+     	  path: path.resolve(__dirname, '../dist'),
 	},
 	plugins: [
-	  new cleanWebpackPlugin(['dist']),
+	  new cleanWebpackPlugin(['dist'], '/'),
+	  new webpack.optimize.CommonsChunkPlugin({
+	    name: 'common', // 指定公共bundle模块名称
+	  }),
 	  new htmlWebpackPlugin({
 			title: 'webpack 实践操作',
 		})

@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "watch": "webpack --progress --watch",
-    "start": "webpack-dev-server --open",
-    "build": "webpack",
+    "start": "webpack-dev-server --open --config config/webpack.dev.js",
+    "build": "webpack --config config/webpack.prod.js",
     "server": "node server",
     "test": "npm test"
   },
@@ -24,7 +24,8 @@
     "uglifyjs-webpack-plugin": "^1.1.8",
     "webpack": "^3.10.0",
     "webpack-dev-middleware": "^2.0.4",
-    "webpack-dev-server": "^2.11.1"
+    "webpack-dev-server": "^2.11.1",
+    "webpack-merge": "^4.1.1"
   },
   "devDependencies": {
     "html-webpack-plugin": "^2.30.1"

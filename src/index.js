@@ -1,4 +1,5 @@
 import './style.css';
+import './module.js';
 import _ from 'lodash';
 import printMsg from './print.js';
 import { square } from './math.js';
