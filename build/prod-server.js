@@ -1,8 +1,7 @@
 const app = require('express')();
 const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
-
-const config = require('./webpack.config.js');
+const config = require('../config/webpack.prod.js');
 const complie = webpack(config);
 
 app.use(webpackDevMiddleware(complie, {
